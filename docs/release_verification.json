@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "environment": {
+    "python": "3.9.23",
+    "numpy": "2.0.2",
+    "torch": "2.8.0+cu126",
+    "inference_device": "cpu"
+  },
+  "checkpoint_sha256": "5896137fe2880cd4c00e2fdaccc02b61bf86951393720aaea1799c66da503470",
+  "verification": "Fresh predict.py inference with the portable checkpoint, followed by evaluate.py using the original official TMscore binary; comparison with archived per-target scores.",
+  "compared_fields": [
+    "official_common_residues",
+    "official_normalization_length",
+    "baseline_official_tm_score",
+    "iterblob_official_tm_score",
+    "delta_official_tm_score",
+    "baseline_official_rmsd",
+    "iterblob_official_rmsd",
+    "delta_official_rmsd",
+    "selected_primitive_id"
+  ],
+  "cohorts": {
+    "casp13": {
+      "target_count": 13,
+      "all_official_values_equal_at_scorer_precision": true,
+      "baseline_tm_score": 0.5395769230769231,
+      "model_tm_score": 0.5438615384615384,
+      "baseline_rmsd": 36.06307692307693,
+      "model_rmsd": 36.006692307692305
+    },
+    "cath52": {
+      "target_count": 52,
+      "all_official_values_equal_at_scorer_precision": true,
+      "baseline_tm_score": 0.8810461538461537,
+      "model_tm_score": 0.8815134615384614,
+      "baseline_rmsd": 3.9249999999999994,
+      "model_rmsd": 3.8951153846153845
+    }
+  },
+  "protocol_unit_tests": {
+    "passed": 8,
+    "framework": "unittest"
+  }
+}
