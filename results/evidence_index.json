@@ -1,0 +1,122 @@
+{
+  "schema_version": "pairrefine_packaged_evidence_v1",
+  "checkpoint": {
+    "source_run": "pair_attention_pae_deployment_seed20260820_lr2e-4_b32_e40",
+    "paper_checkpoint_epoch": 8,
+    "original_checkpoint_sha256": "1543996cbcb0612f821d3f6258653c309efb95cdc437ba57b99dac6b228c0aa9",
+    "original_checkpoint_bytes": 281840,
+    "packaged_checkpoint": "checkpoints/pairrefine_epoch008.pt",
+    "packaged_checkpoint_sha256": "5896137fe2880cd4c00e2fdaccc02b61bf86951393720aaea1799c66da503470",
+    "packaged_checkpoint_bytes": 281328,
+    "tensor_count": 17,
+    "parameter_count": 68550,
+    "all_tensors_bitwise_equal": true,
+    "weights_only_load_verified": true,
+    "training_configuration": {
+      "head_type": "ours_pair_attention",
+      "hidden_dim": 96,
+      "latent_count": 8,
+      "attention_heads": 4,
+      "seed": 20260820,
+      "learning_rate": 0.0002,
+      "batch_size": 32,
+      "training_epochs": 40,
+      "paper_checkpoint_epoch": 8,
+      "weight_decay": 0.0001,
+      "optimizer": "AdamW",
+      "max_gradient_norm": 1.0,
+      "deterministic": true,
+      "pretrained_checkpoint": null,
+      "confidence_gating": false,
+      "pose_scale": 1.0,
+      "primitive_selection": "pae_deployment",
+      "basis_mode": "equivariant_v2",
+      "endpoint_scale_angstroms": 4.0,
+      "rotation_limit_degrees": 60.0
+    },
+    "selection_protocol": "Validation feasibility required both mean official TM-score improvement > 0 and mean official RMSD reduction > 0. Epoch 8 was selected for the paper after reviewing six external metrics from mixed-CASP 13, strict-disjoint 145, and CATH52. This is a retrospective choice, not an untouched-test selection protocol.",
+    "serialization_note": "The portable checkpoint contains the same tensor values as the original. Its SHA256 differs because machine-specific metadata was removed and the checkpoint was serialized again."
+  },
+  "cohorts": {
+    "casp13": {
+      "target_count": 13,
+      "raw_tmscore_record_count": 26,
+      "files": [
+        {
+          "file": "results/casp13/official_tmscore_per_target.csv",
+          "source_sha256": "4d6788922f3692d6967f3c23bcc178c1f5e0f131fbfe53e80a5b7862291a5848",
+          "packaged_sha256": "4d6788922f3692d6967f3c23bcc178c1f5e0f131fbfe53e80a5b7862291a5848",
+          "transformation": "byte-identical copy"
+        },
+        {
+          "file": "results/casp13/p3a_vs_afdb_per_target.csv",
+          "source_sha256": "8c7b9c226e74f2e0d5238667989dce8f3452ebdcaa4a29c1a6e02f8a637ec8ac",
+          "packaged_sha256": "8c7b9c226e74f2e0d5238667989dce8f3452ebdcaa4a29c1a6e02f8a637ec8ac",
+          "transformation": "byte-identical copy"
+        },
+        {
+          "file": "results/casp13/official_tmscore_summary.json",
+          "source_sha256": "7d712f9b00b2314c6fdbc03dc476b700bee697380ef2a15016feb1406e8a9763",
+          "packaged_sha256": "31aa55b914904e79483999d7666d7fe6a05e670172b88cbd11fd34fd092e0377",
+          "transformation": "path fields sanitized; numeric values and existing hashes preserved"
+        },
+        {
+          "file": "results/casp13/prediction_metadata.json",
+          "source_sha256": "1affe864dc62e436ae7541c3d102b13f1f4d217b295d51e2a222b1274bba91bd",
+          "packaged_sha256": "f0921a693a1bfd0478c28dbb6d4f44f83ea56bc5577a0bf925ed49e8a9a2ee3b",
+          "transformation": "path fields sanitized; numeric values and existing hashes preserved"
+        },
+        {
+          "file": "results/casp13/predicted_actions.csv",
+          "packaged_sha256": "73e1aeed61ab621b9eda70ec3152bbc3e0fc645ebe95e836613aa2e747a0d62e",
+          "transformation": "selected action columns copied as strings from the byte-identical source prediction record"
+        },
+        {
+          "file": "results/casp13/raw_tmscore.zip",
+          "packaged_sha256": "971070264285f6881ef33132072eada0f6690caf96b93958ea35baa3116a0dd1",
+          "transformation": "parsed tool outputs archived after path rewriting; individual original/export hashes are inside the archive"
+        }
+      ]
+    },
+    "cath52": {
+      "target_count": 52,
+      "raw_tmscore_record_count": 104,
+      "files": [
+        {
+          "file": "results/cath52/official_tmscore_per_target.csv",
+          "source_sha256": "28c284c48ac940bb7c4debca21ce794743691295e6c2c2b96ae4f37ee1c190b5",
+          "packaged_sha256": "28c284c48ac940bb7c4debca21ce794743691295e6c2c2b96ae4f37ee1c190b5",
+          "transformation": "byte-identical copy"
+        },
+        {
+          "file": "results/cath52/p3a_vs_afdb_per_target.csv",
+          "source_sha256": "bacb876198ddb26654cc36b0ee201169d34c57cde688bbaadaf7ebf01ca53d17",
+          "packaged_sha256": "bacb876198ddb26654cc36b0ee201169d34c57cde688bbaadaf7ebf01ca53d17",
+          "transformation": "byte-identical copy"
+        },
+        {
+          "file": "results/cath52/official_tmscore_summary.json",
+          "source_sha256": "c668f249318a7f5f537e5bf8b46410e96bc8c6152a47952d14fe2e145a54f7e6",
+          "packaged_sha256": "f80bdff786c141fbbc172aa98f6ec8735fa516a2606c21f88d0153cca1f3d86f",
+          "transformation": "path fields sanitized; numeric values and existing hashes preserved"
+        },
+        {
+          "file": "results/cath52/prediction_metadata.json",
+          "source_sha256": "896c00ec4af5afe7364f24172288df58df1ee9b82adcc10b78af7fc05e734c02",
+          "packaged_sha256": "1d633522e61d5da6b30c3182cd2ec58286ca15b15fd7f9e4c59ae1c5f7cf8a19",
+          "transformation": "path fields sanitized; numeric values and existing hashes preserved"
+        },
+        {
+          "file": "results/cath52/predicted_actions.csv",
+          "packaged_sha256": "4ba97117d03b5673a2a86cc0d565a88285a0350616f2f1d441d2a22dc0b4fa4b",
+          "transformation": "selected action columns copied as strings from the byte-identical source prediction record"
+        },
+        {
+          "file": "results/cath52/raw_tmscore.zip",
+          "packaged_sha256": "4dccd6a8646162a401bd49ce711d7a3343bfa250068168df0b6d1be3a54a0275",
+          "transformation": "parsed tool outputs archived after path rewriting; individual original/export hashes are inside the archive"
+        }
+      ]
+    }
+  }
+}
