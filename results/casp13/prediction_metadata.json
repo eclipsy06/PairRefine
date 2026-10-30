@@ -1,0 +1,222 @@
+{
+  "schema_version": "iterblob_external_p3a_two_model_v2",
+  "status": "complete",
+  "dataset_name": "CASP14_15_16_multidomain_13_AFDBv6_temporal_diagnostic",
+  "models": [
+    "afdb_v6_baseline",
+    "trained_p3a_best_validation"
+  ],
+  "claim_status": "validation_feasible_checkpoint_candidate_screening_diagnostic",
+  "temporal_leakage_risk": true,
+  "training_overlap_audit": {
+    "target_overlap": [],
+    "accession_overlap": [],
+    "disjoint": true,
+    "filter_applied": false,
+    "test_count_before_filter": 13,
+    "test_count_after_filter": 13,
+    "excluded_count": 0,
+    "excluded_rows": [],
+    "before_filter": {
+      "target_overlap": [],
+      "accession_overlap": [],
+      "disjoint": true
+    }
+  },
+  "sequence_cluster_disjointness_verified": false,
+  "native_coordinates_used_for_model_or_primitive_selection": false,
+  "native_domain_labels_used_for_reference_partition": false,
+  "checkpoint_artifact_role": "official_validation_feasible_epoch_weights",
+  "checkpoint_epoch": 8,
+  "checkpoint_policy": "tm_rmsd",
+  "pose_scale": 1.0,
+  "pose_scale_selection": "external_preselected_or_validation_only",
+  "primitive_selection": "highest_symmetric_cross_partition_pae",
+  "target_count": 13,
+  "unique_pdb_count": 8,
+  "unique_accession_count": 13,
+  "mean_baseline_tm_score": 0.5046592431687628,
+  "mean_p3a_tm_score": 0.5089976122189959,
+  "mean_delta_tm": 0.004338369050233247,
+  "target_level_improvements": {
+    "fixed_correspondence_ca_tm_score": {
+      "n": 13,
+      "mean": 0.004338369050233247,
+      "median": 5.47159497821248e-07,
+      "mean_ci95": [
+        -0.0040783922140753106,
+        0.016939397981960487
+      ],
+      "positive_fraction": 0.6153846153846154,
+      "nonnegative_fraction": 0.6153846153846154
+    },
+    "global_ca_lddt": {
+      "n": 13,
+      "mean": -0.0017884059636566517,
+      "median": -0.000401652513197126,
+      "mean_ci95": [
+        -0.0038979471690121503,
+        -0.0002661691441977658
+      ],
+      "positive_fraction": 0.23076923076923078,
+      "nonnegative_fraction": 0.23076923076923078
+    },
+    "global_ca_rmsd": {
+      "n": 13,
+      "mean": 0.05632384743228705,
+      "median": -0.014428737289574833,
+      "mean_ci95": [
+        -0.10190273684119104,
+        0.23130117735978528
+      ],
+      "positive_fraction": 0.38461538461538464,
+      "nonnegative_fraction": 0.38461538461538464
+    },
+    "inter_domain_ca_lddt": {
+      "n": 13,
+      "mean": -0.03001605006873981,
+      "median": 0.0,
+      "mean_ci95": [
+        -0.09681768570370161,
+        0.010617724238904232
+      ],
+      "positive_fraction": 0.23076923076923078,
+      "nonnegative_fraction": 0.5384615384615384
+    },
+    "intra_domain_ca_lddt": {
+      "n": 13,
+      "mean": -0.001461768831879625,
+      "median": -0.00021949078138716605,
+      "mean_ci95": [
+        -0.0032214672383073313,
+        -0.00012885850414640106
+      ],
+      "positive_fraction": 0.23076923076923078,
+      "nonnegative_fraction": 0.38461538461538464
+    },
+    "mean_domain_placement_rmsd": {
+      "n": 13,
+      "mean": 0.17618399782110486,
+      "median": 0.06663410672159742,
+      "mean_ci95": [
+        -0.21634547016842,
+        0.5908311214719802
+      ],
+      "positive_fraction": 0.6153846153846154,
+      "nonnegative_fraction": 0.6153846153846154
+    },
+    "mean_relative_rotation_error_deg": {
+      "n": 13,
+      "mean": -0.6753130375643462,
+      "median": -0.3517770921468042,
+      "mean_ci95": [
+        -2.1194027140820935,
+        0.8203925015881481
+      ],
+      "positive_fraction": 0.23076923076923078,
+      "nonnegative_fraction": 0.23076923076923078
+    }
+  },
+  "pdb_cluster_level_improvements": {
+    "fixed_correspondence_ca_tm_score": {
+      "n": 8,
+      "mean": 0.00846517585145677,
+      "median": -0.00030648579049236124,
+      "mean_ci95": [
+        -0.0015445124520319198,
+        0.026567916229245925
+      ],
+      "positive_fraction": 0.375,
+      "nonnegative_fraction": 0.375
+    },
+    "global_ca_lddt": {
+      "n": 8,
+      "mean": -0.000865930155127347,
+      "median": -0.00028978097374321443,
+      "mean_ci95": [
+        -0.002032147826835831,
+        0.00014240111944370065
+      ],
+      "positive_fraction": 0.25,
+      "nonnegative_fraction": 0.25
+    },
+    "global_ca_rmsd": {
+      "n": 8,
+      "mean": 0.063020615517788,
+      "median": 0.015590140602955344,
+      "mean_ci95": [
+        -0.02313347639115982,
+        0.15651436868630614
+      ],
+      "positive_fraction": 0.5,
+      "nonnegative_fraction": 0.5
+    },
+    "inter_domain_ca_lddt": {
+      "n": 8,
+      "mean": -0.011154411279734988,
+      "median": -0.003283410138248899,
+      "mean_ci95": [
+        -0.031303945116529806,
+        0.009732346050283783
+      ],
+      "positive_fraction": 0.25,
+      "nonnegative_fraction": 0.25
+    },
+    "intra_domain_ca_lddt": {
+      "n": 8,
+      "mean": -0.00040090265776455275,
+      "median": -7.278020378459482e-05,
+      "mean_ci95": [
+        -0.0013040839260031953,
+        0.0002394256835000358
+      ],
+      "positive_fraction": 0.25,
+      "nonnegative_fraction": 0.5
+    },
+    "mean_domain_placement_rmsd": {
+      "n": 8,
+      "mean": -0.006844021041645436,
+      "median": 0.027348630015762154,
+      "mean_ci95": [
+        -0.3827810240690221,
+        0.2921392715266642
+      ],
+      "positive_fraction": 0.5,
+      "nonnegative_fraction": 0.5
+    },
+    "mean_relative_rotation_error_deg": {
+      "n": 8,
+      "mean": -1.0011191997569187,
+      "median": -0.512658993448315,
+      "mean_ci95": [
+        -2.3001877167007843,
+        -0.0573368931241062
+      ],
+      "positive_fraction": 0.125,
+      "nonnegative_fraction": 0.125
+    }
+  },
+  "elapsed_seconds": 1.4147352999999998,
+  "seconds_per_target": 0.10882579230769229,
+  "peak_cuda_memory_mib": 91.75341796875,
+  "checkpoint": "checkpoints/pairrefine_epoch008.pt",
+  "checkpoint_sha256": "1543996cbcb0612f821d3f6258653c309efb95cdc437ba57b99dac6b228c0aa9",
+  "manifest": "data/manifests/mixed_casp13.csv",
+  "manifest_sha256": "2e0f6324ce61cb4f7cbc1dd0a2ed3227a6bdc8946420d1d0d1ba6cdb04cbedfc",
+  "partition_manifest": "data/partitions/mixed_casp13.csv",
+  "partition_manifest_sha256": "2b3877f15f65edd5f17050000073ecc5d085930090ebdafa10db551ed7a3587c",
+  "per_target_csv": "results/casp13/p3a_vs_afdb_per_target.csv",
+  "packaging_metadata": {
+    "source_file_sha256": "1affe864dc62e436ae7541c3d102b13f1f4d217b295d51e2a222b1274bba91bd",
+    "path_transformation": "Machine-specific paths were replaced with repository-relative locations or logical external tool names. Unpublished local-only path fields were removed. All numeric values and existing evidence hashes were preserved.",
+    "removed_path_fields": [
+      "cohort_summary",
+      "training_manifest",
+      "per_pdb_csv"
+    ],
+    "original_checkpoint_sha256": "1543996cbcb0612f821d3f6258653c309efb95cdc437ba57b99dac6b228c0aa9",
+    "packaged_checkpoint": "checkpoints/pairrefine_epoch008.pt",
+    "packaged_checkpoint_sha256": "5896137fe2880cd4c00e2fdaccc02b61bf86951393720aaea1799c66da503470",
+    "hash_semantics": "Existing checkpoint_sha256 and input manifest hashes identify original evaluation artifacts. They are preserved as provenance; packaged copies can have different hashes after path sanitization. inputs.saved_results_sha256 remains directly verifiable against the byte-identical p3a_vs_afdb_per_target.csv."
+  }
+}
