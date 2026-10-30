@@ -218,3 +218,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# PairRefine local data, generated predictions, and private credentials
+data/local/
+data/inputs/
+data/partitions/*/
+outputs/
+tools/TMscore*
+*.log
+.env*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.partial
