@@ -1,0 +1,22 @@
+{
+  "data/frozen_partitions.zip": "02829060d917227ee998201f55cf81ab2514a93e83cfe47adb1993fca6052e66",
+  "data/provenance.json": "18b934f5669a46fa3d2f4e34f023a1118444b25c543b158041375a681f2def71",
+  "data/README.md": "847cd3ea205c313ec00802256ce8485750c0a6a0baff695e99be7bab17e2a34a",
+  "data/TERMS.md": "44dfcae4845dc9575b86f81fc7a459ff38f369d88a5363237bf0c94832110da4",
+  "data/casp_source/casp_afdb_coverage_audit.csv": "c9edfcdc44bee7c009b5a06856a6876c096cf3bd1892e0daa15a0fb4fc246e10",
+  "data/casp_source/metadata/casp_multidomain_targets.csv": "488b0055dd651a9fcee48af3057c011bb9426318cfde15f11a35f82d12cdee0c",
+  "data/casp_source/metadata/sequences/casp14.seq.txt": "d6a26eac59378a0459eef209211fe446609beb5b7c2d249e7dcf75d6d1822f3c",
+  "data/casp_source/metadata/sequences/casp15.seq.txt": "7aabc5a95ff042a4adb508f3c761eaadd62fc9dc5d5797e0827cb13123bcacb0",
+  "data/casp_source/metadata/sequences/casp16.T1.seq.txt": "e2825653de48e4e4e917a204de34494fe770860121d791d44d5b5931332ffdf5",
+  "data/labels/train.csv": "5a7d324490b65edb2f0c55dc715a9b5bf722a234642b9a3a599853b2dca04f75",
+  "data/labels/validation.csv": "0ff7fbee46e02dd384abda0174b82d700ef8971801cf8ce0d5ce61cf737545b6",
+  "data/manifests/cath52.csv": "f4846ec1907fd05d73169c80dfde69f40fe702266fd009f7ab448ca7af0fdf3c",
+  "data/manifests/mixed_casp13.csv": "b327df7d1f1ac8f79bf03532769c6f7cffcb91d10679c283e6d6dd9d62119565",
+  "data/manifests/train.csv": "5cf1e8ece0f037bf827e14fc46b832b6123c541cafd9cd8d96cd582bed8ed0bf",
+  "data/manifests/train_validation.csv": "35594e0e4680d294434400bb8bacba8eff6a17c7650ebbe8d60c9d59e2e2aba4",
+  "data/manifests/validation.csv": "bbc5b63a8a13820976374fad7c9316aae41fb21af30d3fc352b50c14e20af45c",
+  "data/partitions/cath52.csv": "9ce5b65d555e9da572ff54d93214bd321ce136cbcbc501d0e652c3c062bd27e5",
+  "data/partitions/mixed_casp13.csv": "61be1a8789fc6b8f5e39850b0c2d2c4c4e63015261a7d71c7c9ac0e84ed87421",
+  "data/partitions/train.csv": "453333aa73c62cc0e12d783c04c83df5b1a2a3c04aaf718d23ae6fb083d05e63",
+  "data/partitions/validation.csv": "18d78a72c6b7f57456049efaa3e88cbd04131738b09816604e5497c6357f3787"
+}
