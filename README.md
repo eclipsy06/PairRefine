@@ -71,7 +71,7 @@ These commands use Bash continuation syntax; join the lines when running them in
 
 `checkpoints/pairrefine_epoch008.pt` contains the paper's epoch 8 model from a 40-epoch run: 68,550 parameters, hidden dimension 96, 8 latent queries, and 4 attention heads. Training starts from scratch with deterministic execution. The protocol uses PAE deployment primitive selection, `equivariant_v2` local frames, pose scale 1.0, and no confidence gate.
 
-Checkpoint SHA256: `5896137fe2880cd4c00e2fdaccc02b61bf86951393720aaea1799c66da503470`.
+
 
 The portable checkpoint preserves all 17 original tensors and loads with `torch.load(..., weights_only=True)`. It was selected retrospectively after external evaluation; it is distinct from a new run's validation-selected `best_model.pt`. [Checkpoint provenance](checkpoints/provenance.json) records its configuration and selection history.
 
