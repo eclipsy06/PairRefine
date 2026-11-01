@@ -1,6 +1,6 @@
 # PairRefine
 
-Model implementation of **PairRefine: A Residue-Pair Guided Primitive-Level Refinement Model for Protein Structure Prediction**.
+Model implementation of **PairRefine: A Residue-Pair Guided Primitive-Level Refinement Model for Protein Structure Prediction**. (Under Review by Scientific Reports)
 
 PairRefine refines predicted C-alpha coordinates with a residue-pair attention pose head. This repository contains the model, training and inference entry points, official evaluation wrapper, and paper checkpoint. The implementation retains the internal package name `iterblob_demo` and head identifier `ours_pair_attention` for checkpoint compatibility.
 
